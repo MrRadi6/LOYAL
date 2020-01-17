@@ -24,3 +24,6 @@ Loyal is a system that make it easy for customers to access their loyalty accoun
 ![alt reward screen](https://github.com/MrRadi6/LOYAL/blob/master/Screenshots/Screen%20Shot%202020-01-17%20at%201.52.26%20AM.png)
 ![alt profile screen](https://github.com/MrRadi6/LOYAL/blob/master/Screenshots/Screen%20Shot%202020-01-17%20at%201.52.43%20AM.png)
 
+###### you will find the Landing Page for the project in the following ling
+** http://loyaltyapp.atwebpages.com **
+
