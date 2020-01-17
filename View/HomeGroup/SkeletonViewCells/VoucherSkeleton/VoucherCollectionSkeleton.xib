@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VoucherCollectionSkeleton" id="hI4-08-8Ix" customClass="VoucherCollectionSkeleton" customModule="Loyal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hI4-08-8Ix" id="zbb-kU-ngh">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="U3l-pX-6hd">
+                        <rect key="frame" x="10" y="0.0" width="404" height="43.5"/>
+                        <color key="backgroundColor" name="ScreenBackground"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6so-wJ-vIB">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="U3l-pX-6hd" secondAttribute="trailing" id="7DD-IB-uCd"/>
+                    <constraint firstAttribute="bottom" secondItem="U3l-pX-6hd" secondAttribute="bottom" id="Kfb-wg-ecb"/>
+                    <constraint firstItem="U3l-pX-6hd" firstAttribute="leading" secondItem="zbb-kU-ngh" secondAttribute="leading" constant="10" id="pAZ-yV-Ev7"/>
+                    <constraint firstItem="U3l-pX-6hd" firstAttribute="top" secondItem="zbb-kU-ngh" secondAttribute="top" id="sif-Em-uHb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="voucherCollection" destination="U3l-pX-6hd" id="Hwj-73-DaR"/>
+            </connections>
+            <point key="canvasLocation" x="345" y="171"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="ScreenBackground">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

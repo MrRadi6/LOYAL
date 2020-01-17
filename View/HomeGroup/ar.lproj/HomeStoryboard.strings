@@ -1,0 +1,54 @@
+
+/* Class = "UIButton"; normalTitle = "Close"; ObjectID = "2Ib-OL-5Wq"; */
+"2Ib-OL-5Wq.normalTitle" = "أغلق";
+
+/* Class = "UINavigationItem"; title = "History"; ObjectID = "9fY-WA-S9G"; */
+"9fY-WA-S9G.title" = "السجل";
+
+/* Class = "UILabel"; text = "Points"; ObjectID = "B5a-D2-rxC"; */
+"B5a-D2-rxC.text" = "نقطة";
+
+/* Class = "UINavigationItem"; title = "LOYAL"; ObjectID = "BLb-R2-p2k"; */
+"BLb-R2-p2k.title" = "لويال";
+
+/* Class = "UINavigationItem"; title = "Vouchers"; ObjectID = "BfN-Qe-hDa"; */
+"BfN-Qe-hDa.title" = "الكوبونات";
+
+/* Class = "UINavigationItem"; title = "Vouchers"; ObjectID = "D0w-PQ-ipq"; */
+"D0w-PQ-ipq.title" = "الكوبونات";
+
+/* Class = "UILabel"; text = "ID:"; ObjectID = "DtG-XJ-WyO"; */
+"DtG-XJ-WyO.text" = "ID:";
+
+/* Class = "UINavigationItem"; title = "LOYAL"; ObjectID = "GLP-pL-9LD"; */
+"GLP-pL-9LD.title" = "لويال";
+
+/* Class = "UINavigationItem"; title = "Rewards"; ObjectID = "JXj-rC-4Rp"; */
+"JXj-rC-4Rp.title" = "المكافآت";
+
+/* Class = "UITabBarItem"; title = "History"; ObjectID = "U8n-2k-RRN"; */
+"U8n-2k-RRN.title" = "السجل";
+
+/* Class = "UITabBarItem"; title = "Rewards"; ObjectID = "ZL6-Nt-Q89"; */
+"ZL6-Nt-Q89.title" = "المكافآت";
+
+/* Class = "UIButton"; normalTitle = "Close"; ObjectID = "ZUs-sM-QRR"; */
+"ZUs-sM-QRR.normalTitle" = "أغلق";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "dEe-lK-NHU"; */
+"dEe-lK-NHU.title" = "الصفحة الرئيسية";
+
+/* Class = "UITabBarItem"; title = "Vouchers"; ObjectID = "fL9-fW-kWQ"; */
+"fL9-fW-kWQ.title" = "الكوبونات";
+
+/* Class = "UILabel"; text = "Expiring Points"; ObjectID = "fyU-L3-fLo"; */
+"fyU-L3-fLo.text" = "نقاط منتهية الصلاحية";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "gy3-ww-8cd"; */
+"gy3-ww-8cd.title" = "Title";
+
+/* Class = "UILabel"; text = "Expiring Data"; ObjectID = "hkn-Pn-KUH"; */
+"hkn-Pn-KUH.text" = "تاريخ انتهاء الصلاحية";
+
+/* Class = "UINavigationItem"; title = "Rewards"; ObjectID = "v2z-Sp-qXx"; */
+"v2z-Sp-qXx.title" = "المكافآت";

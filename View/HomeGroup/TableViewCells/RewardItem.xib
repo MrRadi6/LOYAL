@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RewardItem" id="KH7-2u-JdN" customClass="RewardItem" customModule="Loyal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ADw-uR-yzu">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="87"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rewardsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="ynR-Ya-P1U">
+                                <rect key="frame" x="0.0" y="0.0" width="195" height="87"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RewardMask" translatesAutoresizingMaskIntoConstraints="NO" id="HUR-Lb-Q6y">
+                                <rect key="frame" x="0.0" y="0.0" width="195" height="87"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50% Discount" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RT-JJ-bcs">
+                                <rect key="frame" x="40" y="33.5" width="115" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lastLineFillPercent">
+                                        <integer key="value" value="45"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="ScreenBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8RT-JJ-bcs" secondAttribute="trailing" constant="40" id="1mm-dn-Zqp"/>
+                            <constraint firstItem="HUR-Lb-Q6y" firstAttribute="height" secondItem="ynR-Ya-P1U" secondAttribute="height" id="4VT-3t-udH"/>
+                            <constraint firstItem="HUR-Lb-Q6y" firstAttribute="centerX" secondItem="ynR-Ya-P1U" secondAttribute="centerX" id="KIv-4V-f2a"/>
+                            <constraint firstItem="ynR-Ya-P1U" firstAttribute="height" secondItem="ADw-uR-yzu" secondAttribute="height" id="ZSn-OB-uI4"/>
+                            <constraint firstItem="8RT-JJ-bcs" firstAttribute="centerY" secondItem="ADw-uR-yzu" secondAttribute="centerY" id="a2J-nt-WAv"/>
+                            <constraint firstItem="ynR-Ya-P1U" firstAttribute="centerX" secondItem="ADw-uR-yzu" secondAttribute="centerX" id="bKg-iS-MTI"/>
+                            <constraint firstItem="ynR-Ya-P1U" firstAttribute="centerY" secondItem="ADw-uR-yzu" secondAttribute="centerY" id="c4h-5I-hfa"/>
+                            <constraint firstItem="ynR-Ya-P1U" firstAttribute="width" secondItem="ADw-uR-yzu" secondAttribute="width" id="dlB-F2-Gj1"/>
+                            <constraint firstItem="HUR-Lb-Q6y" firstAttribute="width" secondItem="ynR-Ya-P1U" secondAttribute="width" id="eih-tb-yb5"/>
+                            <constraint firstItem="8RT-JJ-bcs" firstAttribute="leading" secondItem="ADw-uR-yzu" secondAttribute="leading" constant="40" id="wxj-V4-aFL"/>
+                            <constraint firstItem="8RT-JJ-bcs" firstAttribute="centerX" secondItem="ADw-uR-yzu" secondAttribute="centerX" id="xIk-Rh-XEQ"/>
+                            <constraint firstItem="HUR-Lb-Q6y" firstAttribute="centerY" secondItem="ynR-Ya-P1U" secondAttribute="centerY" id="zT2-b3-Tt0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ADw-uR-yzu" firstAttribute="leading" secondItem="KH7-2u-JdN" secondAttribute="leading" id="FrV-9E-CF2"/>
+                <constraint firstAttribute="trailing" secondItem="ADw-uR-yzu" secondAttribute="trailing" id="bpj-xV-1GD"/>
+                <constraint firstItem="ADw-uR-yzu" firstAttribute="top" secondItem="KH7-2u-JdN" secondAttribute="top" id="d7I-MO-h50"/>
+                <constraint firstAttribute="bottom" secondItem="ADw-uR-yzu" secondAttribute="bottom" id="pPu-bV-VVR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="F7d-Iy-nNe"/>
+            <size key="customSize" width="167" height="73"/>
+            <connections>
+                <outlet property="discountLabel" destination="8RT-JJ-bcs" id="gT1-nU-SEM"/>
+                <outlet property="rewardBackground" destination="ynR-Ya-P1U" id="5VV-Jp-LTd"/>
+            </connections>
+            <point key="canvasLocation" x="87.681159420289859" y="-240.73660714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="RewardMask" width="193" height="87"/>
+        <image name="rewardsBackground" width="211" height="105"/>
+        <namedColor name="ScreenBackground">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

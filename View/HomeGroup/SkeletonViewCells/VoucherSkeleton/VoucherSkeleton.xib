@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VoucherSkeleton" id="tMN-KF-x7F" customClass="VoucherSkeleton" customModule="Loyal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="142" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="142" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vvd-Ld-1q4">
+                        <rect key="frame" x="6" y="6" width="130" height="147"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hen using elements with text, SkeletonView" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJM-uX-VEw">
+                                <rect key="frame" x="5" y="53" width="120" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lastLineFillPercent">
+                                        <integer key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="SkeletonBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uJM-uX-VEw" secondAttribute="trailing" constant="5" id="BsF-eP-dQi"/>
+                            <constraint firstAttribute="width" constant="130" id="OXE-kp-Jnv"/>
+                            <constraint firstItem="uJM-uX-VEw" firstAttribute="leading" secondItem="vvd-Ld-1q4" secondAttribute="leading" constant="5" id="jnu-uF-B6Z"/>
+                            <constraint firstAttribute="height" constant="147" id="k6s-G2-BDT"/>
+                            <constraint firstItem="uJM-uX-VEw" firstAttribute="top" secondItem="vvd-Ld-1q4" secondAttribute="top" constant="53" id="uSI-rW-Cw6"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="vvd-Ld-1q4" firstAttribute="centerY" secondItem="tMN-KF-x7F" secondAttribute="centerY" id="URH-kg-nNi"/>
+                <constraint firstItem="vvd-Ld-1q4" firstAttribute="centerX" secondItem="tMN-KF-x7F" secondAttribute="centerX" id="cWt-rf-l4c"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZiS-9L-ISG"/>
+            <size key="customSize" width="142" height="159"/>
+            <connections>
+                <outlet property="skeletonView" destination="vvd-Ld-1q4" id="2T0-9x-lwf"/>
+            </connections>
+            <point key="canvasLocation" x="84.057971014492765" y="-209.93303571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="SkeletonBackground">
+            <color red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

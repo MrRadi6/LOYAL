@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AdsCell" rowHeight="135" id="Eqw-Df-FL6" customClass="AdsCell" customModule="Loyal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1094" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Eqw-Df-FL6" id="fMe-HS-M7E">
+                <rect key="frame" x="0.0" y="0.0" width="1094" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vij-X1-D6g" customClass="FSPagerView" customModule="FSPagerView">
+                        <rect key="frame" x="16" y="16" width="1062" height="108.5"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XfK-Sc-IqD" customClass="FSPageControl" customModule="FSPagerView">
+                        <rect key="frame" x="16" y="94.5" width="1062" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="BZq-rx-g1E"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="currentPage">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="itemSpacing">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="interitemSpacing">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="ScreenBackground"/>
+                <constraints>
+                    <constraint firstItem="Vij-X1-D6g" firstAttribute="leading" secondItem="fMe-HS-M7E" secondAttribute="leading" constant="16" id="7HU-LT-agk"/>
+                    <constraint firstItem="Vij-X1-D6g" firstAttribute="top" secondItem="fMe-HS-M7E" secondAttribute="top" constant="16" id="QdP-jl-RVj"/>
+                    <constraint firstAttribute="bottom" secondItem="XfK-Sc-IqD" secondAttribute="bottom" constant="20" id="cz2-uN-HB1"/>
+                    <constraint firstItem="XfK-Sc-IqD" firstAttribute="leading" secondItem="Vij-X1-D6g" secondAttribute="leading" id="mBl-AC-X5Z"/>
+                    <constraint firstItem="XfK-Sc-IqD" firstAttribute="trailing" secondItem="Vij-X1-D6g" secondAttribute="trailing" id="oIg-zb-0yD"/>
+                    <constraint firstAttribute="bottom" secondItem="Vij-X1-D6g" secondAttribute="bottom" constant="5" id="rYr-xH-K5l"/>
+                    <constraint firstAttribute="trailing" secondItem="Vij-X1-D6g" secondAttribute="trailing" constant="16" id="z7J-9Y-gUx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="adsBanner" destination="Vij-X1-D6g" id="1Ar-Cm-Vhw"/>
+                <outlet property="pageControl" destination="XfK-Sc-IqD" id="sGP-rB-OOW"/>
+            </connections>
+            <point key="canvasLocation" x="-546.37681159420299" y="527.00892857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="ScreenBackground">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

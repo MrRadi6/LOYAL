@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RewardSkeleton" id="5II-4O-AcK" customClass="RewardSkeleton" customModule="Loyal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krW-KN-Nbd">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="87"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50% Discount" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTG-Hl-Tbk">
+                                <rect key="frame" x="10" y="33.5" width="175" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lastLineFillPercent">
+                                        <integer key="value" value="45"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="SkeletonBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zTG-Hl-Tbk" secondAttribute="trailing" constant="10" id="1XG-D0-Das"/>
+                            <constraint firstItem="zTG-Hl-Tbk" firstAttribute="centerY" secondItem="krW-KN-Nbd" secondAttribute="centerY" id="2cE-41-V3z"/>
+                            <constraint firstItem="zTG-Hl-Tbk" firstAttribute="centerX" secondItem="krW-KN-Nbd" secondAttribute="centerX" id="HJy-iA-ZVQ"/>
+                            <constraint firstItem="zTG-Hl-Tbk" firstAttribute="leading" secondItem="krW-KN-Nbd" secondAttribute="leading" constant="10" id="srP-aH-mAW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="krW-KN-Nbd" firstAttribute="top" secondItem="5II-4O-AcK" secondAttribute="top" id="7fZ-HK-HBL"/>
+                <constraint firstAttribute="trailing" secondItem="krW-KN-Nbd" secondAttribute="trailing" id="LfH-sU-nYp"/>
+                <constraint firstItem="krW-KN-Nbd" firstAttribute="leading" secondItem="5II-4O-AcK" secondAttribute="leading" id="b5T-bi-9bh"/>
+                <constraint firstAttribute="bottom" secondItem="krW-KN-Nbd" secondAttribute="bottom" id="od7-qn-JW5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="mAh-qf-iIx"/>
+            <size key="customSize" width="167" height="73"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="skeletonView" destination="krW-KN-Nbd" id="rsm-Lh-jTP"/>
+            </connections>
+            <point key="canvasLocation" x="87.681159420289859" y="-240.73660714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="SkeletonBackground">
+            <color red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
